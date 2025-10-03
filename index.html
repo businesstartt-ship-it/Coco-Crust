@@ -1,0 +1,56 @@
+<!-- Order Form (Formspree) -->
+<section id="order">
+  <h2>Place Your Order</h2>
+  <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+    <label>
+      Full name *
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      Phone (WhatsApp) *
+      <input type="tel" name="phone" required placeholder="+8801XXXXXXXXX">
+    </label>
+
+    <label>
+      Email
+      <input type="email" name="email" placeholder="you@example.com">
+    </label>
+
+    <label>
+      Product & quantity *
+      <input type="text" name="product" required placeholder="Classic - 2 pcs">
+    </label>
+
+    <label>
+      Delivery address or pick-up
+      <textarea name="address" rows="2" placeholder="Street, area, city"></textarea>
+    </label>
+
+    <label>
+      Preferred delivery date/time
+      <input type="text" name="delivery_time" placeholder="2025-10-10, 3–5 PM">
+    </label>
+
+    <label>
+      Payment method
+      <select name="payment">
+        <option>Cash on Delivery</option>
+        <option>Mobile Banking / bKash</option>
+        <option>Bank Transfer</option>
+      </select>
+    </label>
+
+    <label>
+      Notes (allergies, message)
+      <textarea name="notes" rows="2"></textarea>
+    </label>
+
+    <label>
+      <input type="checkbox" name="consent" required>
+      I agree to be contacted about my order (required)
+    </label>
+
+    <button type="submit">Submit Order</button>
+  </form>
+</section>
